@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ArrayShuffleExample {
     public static void main(String[] args) {
-        int[] arr = new int[10];
+        int[] arr = new int[15];
 
         for (int i = 0; i < arr.length; i++) {
             arr[i] = i + 1;
@@ -21,7 +21,7 @@ public class ArrayShuffleExample {
         // 0~9 랜덤값 구한다.
         // 예를 들어 3이 나오면 9번 방과 3번 방을 스와핑한다.
         for (int i = 0; i < arr.length; i++) {
-            int num = (int) (Math.random() * 10.0);
+            int num = (int) (Math.random() * arr.length);
             int temp = arr[i];
             arr[i] = arr[num];
             arr[num] = temp;
