@@ -4,7 +4,9 @@ public class Student {
     //private String name;
     String name;
 
-    //public Student() {}
+    public Student() {
+        System.out.println("기본 생성자 호출!");
+    }
 
     void introduce() {
         int num;
