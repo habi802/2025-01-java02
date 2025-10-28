@@ -8,7 +8,11 @@ public class Tv extends Product {
         super(100);
     }
 
-    @Override
+//    @Override
+//    public String toString() {
+//        return "Tv - " + getPrice() + "만원";
+//    }
+
     public String toString() {
         return "Tv";
     }
